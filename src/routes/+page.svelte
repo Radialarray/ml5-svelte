@@ -1,2 +1,2 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<a href="withoutp5">Go to without p5js example</a>
+<a href="withp5">Go to with p5js example</a>
