@@ -24,6 +24,9 @@
 				// with an array every time new hand poses are detected
 				handpose.on('hand', (results) => {
 					hands = results;
+					if (hands.length > 0) {
+						console.log(hands);
+					}
 				});
 
 				// Hide the video element, and just show the canvas
