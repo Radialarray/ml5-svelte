@@ -72,6 +72,13 @@
 	}
 </script>
 
+<h1>Posenet Example ported from ML5</h1>
+<p>
+	This example modifies the code found here: <a href="https://learn.ml5js.org/#/reference/posenet"
+		>ML5 Posenet</a
+	>
+</p>
+
 {#if sketch}
 	<P5 {sketch} />
 	<Ml5 {mlSketch} domElement={video} />

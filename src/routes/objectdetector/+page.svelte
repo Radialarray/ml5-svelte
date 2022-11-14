@@ -53,6 +53,13 @@
 	}
 </script>
 
+<h1>Object Detector Example ported from ML5</h1>
+<p>
+	This example modifies the code found here: <a
+		href="https://learn.ml5js.org/#/reference/object-detector">ML5 Object Detector</a
+	>
+</p>
+
 {#if sketch}
 	<P5 {sketch} />
 	<Ml5 {mlSketch} domElement={video} mlReady={modelReady} />

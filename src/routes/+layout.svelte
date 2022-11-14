@@ -1,10 +1,12 @@
 <script>
 	import { getPages } from '$lib/utility'; // Path to the utility function
-
+	import { getStores, navigating, page, updated } from '$app/stores';
 	const { url } = import.meta;
 	const modules = import.meta.glob('./**/*.svelte'); // Include subfolder
 	// const modules = import.meta.glob('./**.svelte'); // Current folder only
 	const pages = getPages(url, modules);
+
+	console.log();
 
 	const capitalize = (word) => {
 		if (word.length === 0) {
@@ -19,6 +21,10 @@
 
 		return { name: name, link: page };
 	});
+
+	$: isActive = (link) => {
+		return $page.url.pathname === link ? true : false;
+	};
 </script>
 
 <nav>
@@ -26,9 +32,9 @@
 		{#each navigation as element}
 			<li>
 				{#if element.link === '/'}
-					<a href={element.link}>🤖</a>
+					<a class:active={isActive(element.link)} href={element.link}>🤖</a>
 				{:else}
-					<a href={element.link}>{element.name}</a>
+					<a class:active={isActive(element.link)} href={element.link}>{element.name}</a>
 				{/if}
 			</li>
 		{/each}
@@ -51,6 +57,11 @@
 
 	a {
 		text-decoration: none;
+		color: black;
+	}
+
+	.active {
+		border-bottom: 1px solid black;
 	}
 	:global(body) {
 		max-width: 80%;

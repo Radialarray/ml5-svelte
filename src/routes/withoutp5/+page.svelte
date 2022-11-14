@@ -56,6 +56,12 @@
 	}
 </script>
 
+<h1>This example uses NO p5.js</h1>
+<p>
+	Instead it paints results directly to canvas. ML5 can be used without P5 and there are examples on
+	every ML5 example without P5JS on their homepage.
+</p>
+
 {#if active}
 	<h1>Active</h1>
 {:else}

@@ -58,6 +58,13 @@
 	};
 </script>
 
+<h1>Image Classifier Example ported from ML5</h1>
+<p>
+	This example modifies the code found here: <a
+		href="https://learn.ml5js.org/#/reference/image-classifier">ML5 Image Classifier</a
+	>
+</p>
+
 {#if sketch}
 	<P5 {sketch} />
 	<Ml5 {mlSketch} domElement={video} {mlReady} />
