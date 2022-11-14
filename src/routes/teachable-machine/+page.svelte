@@ -1,7 +1,6 @@
 <script>
 	import P5 from 'p5-svelte';
 	import Ml5 from '$lib/ml5.svelte';
-
 	let classifier;
 	let video;
 	let results = [];
@@ -34,7 +33,11 @@
 	const mlSketch = (domElement, ml5, modelReady) => {
 		// Here you could load another image classification model
 		// OR you could load your custom model from teachable machine
-		classifier = ml5.imageClassifier('MobileNet', video, modelReady);
+		classifier = ml5.imageClassifier(
+			'/custom-model-hand-thumb-peace/model.json',
+			video,
+			modelReady
+		);
 	};
 
 	const mlReady = () => {
