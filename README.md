@@ -1,6 +1,10 @@
-# create-svelte
+# ML5 for svelte
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+This project implements an _easy_ way to use ml5js in svelte. The examples use ml5 and p5 together. Variables can be bound to svelte variables, so there are lots of possibilities to interact with UI element and machine learning models. For example using input via webcam or microphone, or using text input to generate new text from external machine learning APIs.
+
+## How to use the huggingface example?
+
+Create an account on [huggingface](https://huggingface.co/). Then go into your account settings and set up an API key for your account. Duplicate the `.env.example` file and rename it to `.env` . Paste the API key behind the `VITE_HUGGINGFACE_API_TOKEN` variable in the `.env` file.
 
 ## Creating a project
 
