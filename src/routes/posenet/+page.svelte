@@ -1,6 +1,6 @@
 <script>
 	import P5 from 'p5-svelte';
-	import Ml5 from '$lib/components/ml5.svelte';
+	import Ml5 from '$lib/components/Ml5.svelte';
 
 	let video;
 	let poseNet;

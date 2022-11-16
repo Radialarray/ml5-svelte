@@ -1,6 +1,6 @@
 {
 	"name": "ml5-svelte",
-	"version": "0.2.0",
+	"version": "0.2.2",
 	"author": "Radialarray",
 	"description": "A component to use ml5 with or without P5 in svelte.",
 	"keywords": [
@@ -24,10 +24,14 @@
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
 		"format": "prettier --plugin-search-dir . --write ."
 	},
+	"type": "module",
+	"svelte": "index.js",
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "next",
-		"@sveltejs/kit": "next",
+		"@sveltejs/adapter-static": "1.0.0-next.48",
+		"svelte-preprocess": "^4.10.7",
 		"@sveltejs/package": "1.0.0-next.5",
+		"@sveltejs/kit": "next",
 		"eslint": "^8.27.0",
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-svelte3": "^4.0.0",
@@ -39,10 +43,8 @@
 		"typescript": "^4.9.3",
 		"vite": "^3.2.4"
 	},
-	"type": "module",
-	"svelte": "index.js",
 	"dependencies": {
-		"svelte": "^3.53.1",
-		"ml5": "^0.12.2"
+		"ml5": "^0.12.2",
+		"svelte": "^3.53.1"
 	}
 }
