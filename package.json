@@ -1,6 +1,6 @@
 {
 	"name": "ml5-svelte",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"author": "Radialarray",
 	"description": "A component to use ml5 with or without P5 in svelte.",
 	"keywords": [
@@ -40,6 +40,7 @@
 		"vite": "^3.2.4"
 	},
 	"type": "module",
+	"svelte": "index.js",
 	"dependencies": {
 		"svelte": "^3.53.1",
 		"ml5": "^0.12.2"
