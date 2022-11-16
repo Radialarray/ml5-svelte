@@ -1,5 +1,5 @@
 <script>
-	import { getPages } from '$lib/utility'; // Path to the utility function
+	import { getPages } from '$lib/utils/utility'; // Path to the utility function
 	import { getStores, navigating, page, updated } from '$app/stores';
 	const { url } = import.meta;
 	const modules = import.meta.glob('./**/*.svelte'); // Include subfolder

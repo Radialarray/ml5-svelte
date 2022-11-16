@@ -1,6 +1,6 @@
 <script>
 	import P5 from 'p5-svelte';
-	import Ml5 from '$lib/ml5.svelte';
+	import Ml5 from '$lib/components/ml5.svelte';
 	let classifier;
 	let video;
 	let results = [];
