@@ -1,6 +1,6 @@
 {
 	"name": "ml5-svelte",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"author": "Radialarray",
 	"description": "A component to use ml5 with or without P5 in svelte.",
 	"keywords": [
