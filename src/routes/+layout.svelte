@@ -1,10 +1,16 @@
 <script>
-	import { getPages } from '$lib/utils/utility'; // Path to the utility function
 	import { getStores, navigating, page, updated } from '$app/stores';
-	const { url } = import.meta;
-	const modules = import.meta.glob('./**/*.svelte'); // Include subfolder
-	// const modules = import.meta.glob('./**.svelte'); // Current folder only
-	const pages = getPages(url, modules);
+	const pages = [
+		'/',
+		'/facemesh',
+		'/handpose',
+		'/imageclassifier',
+		'/objectdetector',
+		'/posenet',
+		'/teachable-machine',
+		'/withoutp5',
+		'/huggingface'
+	];
 
 	console.log();
 
