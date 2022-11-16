@@ -1,5 +1,5 @@
 <script>
-	import { onMount } from 'svelte';
+	import { onCreate } from 'svelte';
 
 	export let domElement = null;
 	export let mlSketch = null;
@@ -9,13 +9,15 @@
 		console.log('Model ready!');
 	};
 
-	onMount(async () => {
+	onCreate(async () => {
+		const ml5 = await import('ml5');
 		if (mlReady === (undefined || null)) {
 			mlReady = modelReady;
 		}
 
-		const ml5 = await import('ml5');
 		console.log('ml5 version:', ml5.version);
-		mlSketch(domElement, ml5, mlReady);
+		if (mlSketch !== (undefined || null)) {
+			mlSketch(domElement, ml5, mlReady);
+		}
 	});
 </script>
