@@ -5,9 +5,9 @@
 	export let mlSketch = null;
 	export let mlReady = null;
 
-	function modelReady() {
+	const modelReady = () => {
 		console.log('Model ready!');
-	}
+	};
 
 	onMount(async () => {
 		if (mlReady === (undefined || null)) {
