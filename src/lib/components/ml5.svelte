@@ -10,7 +10,8 @@
 	};
 
 	onMount(async () => {
-		const ml5 = await import('ml5');
+		const library = await import('ml5');
+		const ml5 = library.default;
 		if (mlReady === (undefined || null)) {
 			mlReady = modelReady;
 		}

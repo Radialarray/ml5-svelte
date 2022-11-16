@@ -1,1 +1,1 @@
-export { default } from './components/Ml5.svelte';
+export { default as default } from './components/Ml5.svelte';
