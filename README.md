@@ -1,6 +1,6 @@
-# ML5 for svelte
+# ML5-svelte
 
-This project implements an _easy_ way to use ml5js in svelte. The examples use ml5 and p5 together. Variables can be bound to svelte variables, so there are lots of possibilities to interact with UI element and machine learning models. For example using input via webcam or microphone, or using text input to generate new text from external machine learning APIs.
+This project implements an _easy_ way to use ml5js as a component in svelte. The examples use ml5 and p5 together. Variables can be bound to svelte variables, so there are lots of possibilities to interact with UI element and machine learning models. For example using input via webcam or microphone, or using text input to generate new text from external machine learning APIs.
 
 Many thanks to the contributors of the P5 and ML5 community for developing these great tools! You can find the projects here:
 
