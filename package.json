@@ -28,8 +28,9 @@
 	"svelte": "index.js",
 	"devDependencies": {
 		"@sveltejs/adapter-vercel": "1.0.0-next.81",
-		"@sveltejs/kit": "next",
+		"@sveltejs/kit": "1.0.1",
 		"@sveltejs/package": "1.0.0-next.5",
+		"@vitejs/plugin-basic-ssl": "^1.0.1",
 		"eslint": "^8.27.0",
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-svelte3": "^4.0.0",
@@ -40,7 +41,7 @@
 		"svelte-preprocess": "^4.10.7",
 		"svelte2tsx": "^0.5.20",
 		"typescript": "^4.9.3",
-		"vite": "^3.2.4"
+		"vite": "^4.0.0"
 	},
 	"dependencies": {
 		"ml5": "^0.12.2",
