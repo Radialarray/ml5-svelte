@@ -27,7 +27,7 @@
 	"type": "module",
 	"svelte": "index.js",
 	"devDependencies": {
-		"@sveltejs/adapter-vercel": "1.0.0-next.81",
+		"@sveltejs/adapter-vercel": "1.0.0",
 		"@sveltejs/kit": "1.0.1",
 		"@sveltejs/package": "1.0.0-next.5",
 		"@vitejs/plugin-basic-ssl": "^1.0.1",
